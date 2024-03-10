@@ -26,7 +26,7 @@ pipeline {
               sh 'mvn test'
             }
           }
-        },
+        }
         stage('SCA') {
           steps {
             container('maven') {
